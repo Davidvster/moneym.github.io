@@ -65,8 +65,8 @@ body {
 
 .mm-dark {
   --bg: #0A0A0A;
-  --surface: #141414;
-  --surface-2: #1C1C1C;
+  --surface: #0A0A0A;
+  --surface-2: #000000;
   --border: #232323;
   --border-strong: #353535;
   --divider: #1E1E1E;
@@ -119,8 +119,8 @@ header.app-header {
 }
 
 .brand-logo {
-  width: 32px;
-  height: 32px;
+  width: 80px;
+  height: 80px;
 }
 
 .brand-logo--dark {
