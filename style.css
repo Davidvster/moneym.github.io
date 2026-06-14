@@ -320,50 +320,115 @@ header.app-header {
   font-size: 14px;
   color: var(--text-2);
   padding-top: 8px;
+  line-height: 1.6;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--s-3);
+}
+
+.feature-card {
+  border-radius: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: var(--s-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+
+.feature-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  background: var(--dot, var(--accent));
+}
+
+.feature-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.feature-desc {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text-2);
+  margin: 0;
 }
 
 .legal-stack {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
+  gap: var(--s-3);
+}
+
+.legal-link-card {
+  border-radius: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: var(--s-4) var(--s-5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: var(--s-4);
+  text-decoration: none;
+  color: var(--text);
 }
 
-.legal-card {
-  border-radius: 16px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  padding: var(--s-5);
-  font-size: 14px;
+.legal-link-card:hover {
+  border-color: var(--border-strong);
 }
 
-.legal-card h3 {
+.legal-link-card h3 {
   font-size: 15px;
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin: 0 0 4px;
 }
 
-.legal-card p {
-  margin: 0 0 8px;
+.legal-link-card p {
+  font-size: 13px;
+  margin: 0;
   color: var(--text-2);
 }
 
-.legal-card {
-  border-radius: 16px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  padding: var(--s-5);
+.legal-link-arrow {
+  font-size: 18px;
+  color: var(--text-3);
+}
+
+.back-link {
+  font-size: 13px;
+  color: var(--text-2);
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: var(--text);
+}
+
+.legal-page {
+  margin-top: var(--s-5);
   font-size: 14px;
 }
 
-.legal-card h3 {
-  font-size: 15px;
-  margin-top: 0;
-  margin-bottom: 8px;
+.legal-page h1 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  margin: 0 0 var(--s-3);
 }
 
-.legal-card p {
-  margin: 0 0 8px;
+.legal-page p {
+  margin: 0 0 var(--s-3);
   color: var(--text-2);
+  line-height: 1.65;
+  max-width: 46rem;
+}
+
+.legal-page a {
+  color: var(--accent);
 }
 
 footer.app-footer {
